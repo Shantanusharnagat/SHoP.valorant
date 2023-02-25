@@ -1,4 +1,4 @@
-const erroHandler = (err, req, res, next)=>{
+const errorHandler = (err, req, res, next)=>{
     const statusCode=res.statusCode ? res.statusCode : 500
 
     res.status(statusCode)
@@ -10,6 +10,6 @@ const erroHandler = (err, req, res, next)=>{
 }
 
 module.exports={
-    erroHandler,
+    errorHandler,
     
 }
