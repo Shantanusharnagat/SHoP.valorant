@@ -6,6 +6,7 @@ import {useNavigate} from 'react-router-dom'
 import {toast} from 'react-toastify'
 import {register, reset} from '../features/auth/authSlice'
 import Spinner from '../components/Spinner'
+import './Login.css'
 
 const Register = () => {
     const [formData, setFormData]=useState({
@@ -63,7 +64,7 @@ const Register = () => {
         return <Spinner/>
     }
   return (
-    <>
+    <div className='log'>
         <section className='heading'>
             <h1>
                 <FaUser/> Register
@@ -116,7 +117,7 @@ const Register = () => {
                 
             </form>
         </section>
-    </>
+    </div>
   )
 }
 

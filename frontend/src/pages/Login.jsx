@@ -6,6 +6,7 @@ import {useNavigate} from 'react-router-dom'
 import {toast} from 'react-toastify'
 import {login, reset} from '../features/auth/authSlice'
 import Spinner from '../components/Spinner'
+import './Login.css'
 
 
 
@@ -61,12 +62,12 @@ const Login = () => {
         return <Spinner/>
     }
   return (
-    <>
+    <div className='log'>
         <section className='heading'>
             <h1>
                 <FaSignInAlt/> Login
             </h1>
-            <p>Login and start setting goals</p>
+            <p>Login and start buying stuff</p>
         </section>
         <section className='form'>
             <form onSubmit={onSubmit}>
@@ -98,7 +99,7 @@ const Login = () => {
                 
             </form>
         </section>
-    </>
+    </div>
   )
 }
 
