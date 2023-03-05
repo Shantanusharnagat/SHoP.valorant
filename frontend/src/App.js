@@ -7,6 +7,10 @@ import Register from './pages/Register';
 import Services from './pages/Services'
 import Developers from './pages/Developers'
 import Header from './components/Header';
+import Success from './pages/Success';
+import Cancel from './pages/Cancel';
+
+
 function App() {
   return (
     <>
@@ -19,8 +23,9 @@ function App() {
             <Route path='/register' element={<Register/>}/>
             <Route path='/services' element={<Services/>} />
             <Route path='/developers' element={<Developers/>} />
-          
-
+            <Route path='/cancel' element={<Cancel/>} />
+            <Route path='/success' element={<Success/>} />
+  
           </Routes>
         </div>
       </Router>
