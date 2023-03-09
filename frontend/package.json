@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "proxy": "https://bronze-woodpecker-belt.cyclic.app",
+  "proxy": "https://localhost:3000",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
