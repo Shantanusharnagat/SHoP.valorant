@@ -8,8 +8,8 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  height: 100vh;
-  overflow: hidden;
+  height: 100%;
+  /* overflow: hidden; */
 
 
 }
@@ -53,7 +53,12 @@ h3 {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
-  border-bottom: 1px solid #e6e6e6;
+
+  margin-bottom: 3%;
+
+
+
+
 
 }
 
@@ -218,4 +223,6 @@ h3 {
   .heading p {
     font-size: 1.5rem;
   }
+
+
 }
